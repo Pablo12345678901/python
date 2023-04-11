@@ -1,0 +1,118 @@
+#:import track track
+#:import play_indicator play_indicator
+
+MainWidget:
+
+<ControlButton@Button>:
+
+<VerticalSpacingWidget>:
+    # widget des espacement entre les tracks et aussi tout en bas du dernier track
+    size_hint_y: 0.01 # espace très petit en les tracks > s'aggrandit en aggrandissant la fenêtre
+
+
+<MainWidget>:
+    # MainWidget est un RelativeLayout
+    tracks_layout: tracks_layout # la propriété tracks_layout correspond à l'id du même nom
+    play_indicator_widget : play_indicator_widget # la propriété play_indicator_widget correspond à l'id du même nom
+    BoxLayout:
+        # ce boxlayout contiendra plusieurs blocs : les boutons play/stop et les tracks
+        orientation: "vertical"
+
+        RelativeLayout:
+            # Top layout
+            size_hint_y : None # pour gérer la hauteur du boxlayout
+            height: dp(60) # adaptation de la hauteur
+            Image:
+                # l'image de fonds de la partie supérieure
+                source: "RESOURCES/images/top_background.png"
+                allow_stretch: True
+                keep_ratio: False
+            Image:
+                # le logo
+                source: "RESOURCES/images/logo.png"
+                size_hint_x: None
+                width: dp(230)
+                allow_stetch: True
+
+            BoxLayout:
+                size_hint_x: None
+                width: dp(150)
+                pos_hint: {"center_x": 0.5}
+                ControlButton:
+                    on_press: root.on_play_button_pressed() # appel de la fonction en cas de clic sur bouton
+                    border: 0, 0, 0, 0 # supression de la bordure (marge) autour du bouton
+                    background_normal: "RESOURCES/images/play_button_normal.png"
+                    background_down: "RESOURCES/images/play_button_down.png"
+                ControlButton:
+                    on_press: root.on_stop_button_pressed() # appel de la fonction en cas de clic sur bouton
+                    border: 0, 0, 0, 0 # supression de la bordure (marge) autour du bouton
+                    background_normal: "RESOURCES/images/stop_button_normal.png"
+                    background_down: "RESOURCES/images/stop_button_down.png"
+
+            BoxLayout:
+                size_hint_x: None
+                width: dp(180)
+                pos_hint: {"right": 1, "center_y" : 0.5}
+                ControlButton:
+                    border: 0, 0, 0, 0 # supression de la bordure (marge) autour du bouton
+                    size_hint_x: None # pour gérer la largeur du bouton
+                    width: dp(32) # adaptation de la largeur
+                    on_press: root.bpm -= root.change_value_on_bpm_button_click
+                    background_normal: "RESOURCES/images/minus_button_normal.png"
+                    background_down: "RESOURCES/images/minus_button_down.png"
+                RelativeLayout:
+                    Image:
+                        # l'image de fonds de la partie supérieure
+                        source: "RESOURCES/images/bpm_lcd_background.png"
+                        allow_stretch: True
+                        keep_ratio: False
+                    Label:
+                        pos: -dp(4), dp(3)
+                        text: "888"
+                        font_name: "RESOURCES/fonts/Lcd.ttf"
+                        font_size: dp(36)
+                        opacity: .1
+                        color: 0, 1, 1, 1
+                    Label:
+                        pos: -dp(4), dp(3)
+                        text: '{:0>3}'.format(str(root.bpm)) # format pour toujours avoir 3 chiffres - rempli avec 0 si nécessaire
+                        font_name: "RESOURCES/fonts/Lcd.ttf"
+                        font_size: dp(36)
+                        color: 0, 1, 1, 1
+                ControlButton:
+                    border: 0, 0, 0, 0 # supression de la bordure (marge) autour du bouton
+                    size_hint_x : None # pour gérer la largeur du bouton
+                    width: dp(32) # adaptation de la largeur
+                    on_press: root.bpm += root.change_value_on_bpm_button_click
+                    background_normal: "RESOURCES/images/plus_button_normal.png"
+                    background_down: "RESOURCES/images/plus_button_down.png"
+                Widget:
+                    size_hint_x : None # pour gérer la largeur du bouton
+                    width: dp(20) # adaptation de la largeur
+
+        RelativeLayout:
+            # Bottom layout
+            Image:
+                source: "RESOURCES/images/background.jpg"
+                allow_stretch: True
+                keep_ratio: False
+            BoxLayout:
+                size_hint: None, None
+                size: (self.parent.width - dp(32), self.parent.height - dp(32))
+                x: dp(16)
+                y: dp(16)
+                orientation: "vertical"
+                PlayIndicatorWidget:
+                    id: play_indicator_widget # création d'un id pour appel dans le main.py
+                    size_hint_y : None # pour gérer la hauteur du boxlayout
+                    height: dp(8) # adaptation de la hauteur
+                    left_align: root.TRACK_STEPS_LEFT_ALIGN # adaptation de l'alignement à gauche du widget
+                ScrollView:
+                    # très pratique pour les applications sur smartphone
+                    do_scroll_x: False # ne pas autoriser le scroll sur l'axe horizontal
+                    do_scroll_y: True #autoriser le scroll sur l'axe vertical
+                    BoxLayout:
+                        size_hint_min_y: root.max_height_track * root.nb_tracks # la scroll view doit connaître la taille du contenu pour savoir comment scroller
+                        # besoin d'indiquer la taille max d'un élément * le nombre d'élément pour lui indiquer cette valeur
+                        id: tracks_layout # création d'un id pour pouvoir accéder au BoxLayout depuis le fichier main.py
+                        orientation: "vertical"

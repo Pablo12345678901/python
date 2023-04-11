@@ -1,0 +1,35 @@
+dependencies: \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2_mixer/x86_64/SDL2_mixer-2.0.4/music.c \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/dist/include/common/sdl2/SDL_hints.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/dist/include/common/sdl2/SDL_stdinc.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/dist/include/common/sdl2/SDL_config.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/dist/include/common/sdl2/SDL_platform.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/dist/include/common/sdl2/begin_code.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/dist/include/common/sdl2/close_code.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/dist/include/common/sdl2/SDL_config_iphoneos.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/dist/include/common/sdl2/SDL_log.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/dist/include/common/sdl2/SDL_timer.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/dist/include/common/sdl2/SDL_error.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2_mixer/x86_64/SDL2_mixer-2.0.4/SDL_mixer.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/dist/include/common/sdl2/SDL_rwops.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/dist/include/common/sdl2/SDL_audio.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/dist/include/common/sdl2/SDL_endian.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/dist/include/common/sdl2/SDL_mutex.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/dist/include/common/sdl2/SDL_thread.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/dist/include/common/sdl2/SDL_atomic.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/dist/include/common/sdl2/SDL_version.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2_mixer/x86_64/SDL2_mixer-2.0.4/mixer.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2_mixer/x86_64/SDL2_mixer-2.0.4/music.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2_mixer/x86_64/SDL2_mixer-2.0.4/music_cmd.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2_mixer/x86_64/SDL2_mixer-2.0.4/music_wav.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2_mixer/x86_64/SDL2_mixer-2.0.4/music_mikmod.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2_mixer/x86_64/SDL2_mixer-2.0.4/music_modplug.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2_mixer/x86_64/SDL2_mixer-2.0.4/music_nativemidi.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2_mixer/x86_64/SDL2_mixer-2.0.4/music_fluidsynth.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2_mixer/x86_64/SDL2_mixer-2.0.4/music_timidity.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2_mixer/x86_64/SDL2_mixer-2.0.4/music_ogg.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2_mixer/x86_64/SDL2_mixer-2.0.4/music_opus.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2_mixer/x86_64/SDL2_mixer-2.0.4/music_mpg123.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2_mixer/x86_64/SDL2_mixer-2.0.4/music_mad.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2_mixer/x86_64/SDL2_mixer-2.0.4/music_flac.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2_mixer/x86_64/SDL2_mixer-2.0.4/native_midi/native_midi.h

@@ -1,0 +1,179 @@
+<StackLayoutExemple>:
+
+
+<BoxLayout1@BoxLayout>:
+    orientation: "vertical"
+    Button:
+        text: "A"
+        size_hint: 1, .1
+    BoxLayout:
+        orientation: "horizontal"
+        Button:
+            text: "B"
+            size_hint: .1, 1
+        BoxLayout:
+            orientation: "vertical"
+            Button:
+                text: "C"
+                size_hint: 1, .1
+            BoxLayout:
+                orientation: "horizontal"
+                Button:
+                    text: "D"
+                    size_hint: .1, 1
+                Button:
+                    text: "E"
+                    size_hint: .9, 1
+
+<LayoutExemplesTabs@TabbedPanel>:
+    do_default_tab: False
+    TabbedPanelItem:
+        text: "Widget"
+        MainWidget:
+    TabbedPanelItem:
+        text: "Box"
+        BoxLayoutExemple:
+    TabbedPanelItem:
+        text: "Anchor"
+        AnchorLayoutExemple:
+    TabbedPanelItem:
+        text: "Grid"
+        GridLayoutExemple:
+    TabbedPanelItem:
+        text: "Stack"
+        StackLayoutExemple_test:
+    TabbedPanelItem:
+        text: "Scroll"
+        ScrollViewExemple:
+    TabbedPanelItem:
+        text: "Page"
+        PageLayoutExemple:
+
+<PageLayoutExemple@PageLayout>:
+    MainWidget:
+        canvas.before:
+            Color:
+                rgb: 0, 0, 0
+            Rectangle:
+                size: self.size
+                pos: self.pos
+    BoxLayoutExemple:
+        canvas.before:
+            Color:
+                rgb: 0, 0, 0
+            Rectangle:
+                size: self.size
+                pos: self.pos
+    AnchorLayoutExemple:
+        canvas.before:
+            Color:
+                rgb: 0, 0, 0
+            Rectangle:
+                size: self.size
+                pos: self.pos
+    GridLayoutExemple:
+        canvas.before:
+            Color:
+                rgb: 0, 0, 0
+            Rectangle:
+                size: self.size
+                pos: self.pos
+
+<ScrollViewExemple@ScrollView>:
+    StackLayoutExemple:
+        size_hint: 1, None
+        height: self.minimum_height
+        #height: 4000
+
+<StackLayoutExemple_test@StackLayout>:
+    orientation: "rl-bt"
+    Button:
+        text: "A"
+        size_hint: 1, .1
+    StackLayout:
+        size_hint: 1, .9
+        orientation: "lr-bt"
+        Button:
+            text: "B"
+            size_hint: .1, 1
+        StackLayout:
+            size_hint: .9, 1
+            orientation: "lr-tb"
+            Button:
+                text: "C"
+                size_hint: 1, .1
+            StackLayout:
+                size_hint: 1, .9
+                orientation: "rl-tb"
+                Button:
+                    text: "D"
+                    size_hint: .1, 1
+                StackLayout:
+                    size_hint: .9, 1
+                    orientation: "rl-bt"
+                    Button:
+                        text: "E"
+                        size_hint: 1, .1
+                    Button:
+                        text: "F"
+                        size_hint: 1, .9
+
+
+<GridLayoutExemple@GridLayout>:
+    rows: 2
+    Button:
+        text: "A"
+    BoxLayoutExemple:
+    Button:
+        text: "C"
+    Button:
+        text: "D"
+    Button:
+        text: "E"
+    Button:
+        text: "F"
+
+
+<AnchorLayoutExemple>:
+    anchor_x : "right"
+    anchor_y : "top"
+    BoxLayout:
+        size_hint: .2, .2
+        Button:
+            text: "A"
+        Button:
+            text: "B"
+
+<BoxLayoutExemple>:
+    orientation: "horizontal"
+    Button:
+        text: "A"
+        size_hint: .5, .5
+        pos_hint: {"top": 0.5}
+        # right: 550
+        # x: 450
+    BoxLayout:
+        spacing: "10dp"
+        orientation: "vertical"
+        Button:
+            text: "B1"
+        Button:
+            text: "B2"
+        Button:
+            text: "B3"
+        Button:
+            text: "B4"
+    Label:
+        text: "C"
+
+<MainWidget>:
+    Button:
+        text: "Hello"
+        size: "100dp", "60dp"
+        pos: "200dp", "100dp"
+        color: 0, 0, 1, 1
+    Label:
+        text: "Hello2"
+        size: "100dp", "60dp"
+        pos: "400dp", "200dp"
+        color: 1, 0, 0, 1

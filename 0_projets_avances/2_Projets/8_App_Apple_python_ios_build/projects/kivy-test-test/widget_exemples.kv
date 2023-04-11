@@ -1,0 +1,67 @@
+<WidgetsExemple>:
+    cols: 3
+    ToggleButton:
+        text: "OFF"
+        size_hint: None, 1
+        width: "100dp"
+        on_state: root.on_toggle_button_state(self)
+        # le self dans le fichier .kv représente le widget
+        # ce n'est pas le self du fichier .py qui représente la class
+    Button:
+        text: "Comptez"
+        # appel de la fonction lors du click
+        on_press: root.on_button_click()
+        # root fait référence au parent = la class WidgetExample
+        disabled: not root.compteur_actif
+    Label:
+        text: root.mon_texte
+        font_name: "RESSOURCES/fonts/Lcd.ttf"
+        font_size: "80dp"
+        color: 1, 0.5, 1, 1
+    Switch:
+        active: True
+        id: mon_switch
+        size_hint: None, 1
+        width: "100dp"
+        on_active: root.on_switch_active(self)
+    Slider:
+        # donner un id à mon slider
+        id: mon_slider
+        min: 0
+        max: 100
+        value: 50
+        on_value: root.on_slider_value(self)
+        orientation: "vertical"
+        disabled: not mon_switch.active
+    BoxLayout:
+        orientation: "vertical"
+        Label:
+            # faire appel à l'id pour obtenir une valeur d'une de ses propriétés
+            text: str(int(mon_slider.value))
+            # ici la propriété est "value" du widget "Slider"
+        ProgressBar:
+            max: 100
+            value: mon_slider.value
+    TextInput:
+        # création d'un id
+        id: mon_textinput
+        size_hint: None, 1
+        width: "100dp"
+        text: "blablabla"
+        multiline: False
+        on_text_validate: root.on_text_validate(self)
+    Label
+        # modification de la valeur de text selon la valeur de la variable
+        text: root.text_input_str
+
+<ImagesExemple@GridLayout>:
+    cols: 3
+    Image:
+        source: "RESSOURCES/images/cake.jpg"
+    Image:
+        source: "RESSOURCES/images/cake.jpg"
+        allow_stretch: True
+    Image:
+        source: "RESSOURCES/images/cake.jpg"
+        allow_stretch: True
+        keep_ratio: False

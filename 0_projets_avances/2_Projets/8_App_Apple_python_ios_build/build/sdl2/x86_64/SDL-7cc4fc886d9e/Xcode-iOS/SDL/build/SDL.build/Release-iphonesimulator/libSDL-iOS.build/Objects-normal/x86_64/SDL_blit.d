@@ -1,0 +1,34 @@
+dependencies: \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/src/video/SDL_blit.c \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/src/video/../SDL_internal.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/src/video/../dynapi/SDL_dynapi.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/include/SDL_config.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/include/SDL_platform.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/include/begin_code.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/include/close_code.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/include/SDL_config_iphoneos.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/include/SDL_video.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/include/SDL_stdinc.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/include/SDL_pixels.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/include/SDL_endian.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/include/SDL_rect.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/include/SDL_error.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/include/SDL_rwops.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/include/SDL_surface.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/include/SDL_blendmode.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/src/video/SDL_sysvideo.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/include/SDL_messagebox.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/include/SDL_shape.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/include/SDL_thread.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/include/SDL_atomic.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/include/SDL_mutex.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/include/SDL_metal.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/src/video/SDL_vulkan_internal.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/include/SDL_vulkan.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/src/video/SDL_blit.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/include/SDL_cpuinfo.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/src/video/SDL_blit_auto.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/src/video/SDL_blit_copy.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/src/video/SDL_blit_slow.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/src/video/SDL_RLEaccel_c.h \
+  /Users/Jonathan/Desktop/FORMATION_PYTHON/EXTERNALS/kivy/examples/demo/touchtracer/kivy-ios/build/sdl2/x86_64/SDL-7cc4fc886d9e/src/video/SDL_pixels_c.h
