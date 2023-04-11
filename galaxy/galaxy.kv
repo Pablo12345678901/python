@@ -1,0 +1,23 @@
+#:import menu menu
+
+MainWidget
+
+<MainWidget>:
+    canvas.before:
+        Rectangle:
+            source: "RESSOURCES/images/bg1.jpg"
+            size: self.size
+    menu_widget: menu_widget # assignation de l'id (voir ci-dessous) à une variable de class
+    perspective_point_x: self.width/2
+    perspective_point_y: self.height * 0.75
+    MenuWidget:
+        id: menu_widget # création d'un id pour le MenuWidget
+    Label:
+        text: root.score_txt
+        font_size: dp(20)
+        font_name: "RESSOURCES/fonts/Eurostile.ttf"
+        color: (1, 1, 1)
+        pos_hint: {"x": 0, "top": 1}
+        size_hint: .18, .18
+
+
