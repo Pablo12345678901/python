@@ -1,0 +1,83 @@
+#:import layout_exemples layout_exemples
+#:import widget_exemples widget_exemples
+#:import navigation_screen_manager navigation_screen_manager
+#:import boxlayout_with_action_bar boxlayout_with_action_bar
+#:import canvas_exemples canvas_exemples
+
+<MenuPrincipal@BoxLayout>:
+    BoxLayout:
+        orientation: "vertical"
+        Button:
+            text: "Layouts"
+            on_press: app.manager.push("LayoutExemplesTabs")
+        Button:
+            text: "Widgets"
+            on_press: app.manager.push("WidgetsExemple")
+        Button:
+            text: "Images"
+            on_press: app.manager.push("Images")
+        Button:
+            text: "Canvas"
+            on_press: app.manager.push("Canvas")
+
+<MyScreenManager>:
+    Screen:
+        name: "MenuPrincipal"
+        MenuPrincipal:
+    Screen:
+        name: "LayoutExemplesTabs"
+        BoxLayoutWithActionBar:
+            title: "Layouts"
+            LayoutExemplesTabs:
+    Screen:
+        name: "WidgetsExemple"
+        BoxLayoutWithActionBar:
+            title: "Widgets"
+            WidgetsExemple:
+    Screen:
+        name: "Images"
+        BoxLayoutWithActionBar:
+            title: "Images"
+            ImagesExemple:
+    Screen:
+        name: "Canvas"
+        BoxLayoutWithActionBar:
+            title: "Canvas"
+            CanvasExemplesTabs:
+
+# ajouter un bouton sur le menu principal
+# qui accède à un écran qui navigue par tab vers tous les canvas de 1 à 7
+
+<AncienScreenManager>
+    Screen:
+        name: "screen1"
+        BoxLayout:
+            Button:
+                text: "Aller vers écran 2"
+                on_press: app.manager.push("screen2")
+            Button:
+                text: "Aller vers écran 3"
+                on_press: app.manager.push("screen3")
+            Button:
+                text: "Aller vers écran ImagesExemple"
+                on_press: app.manager.push("ImagesExemple")
+    Screen:
+        name: "ImagesExemple"
+        BoxLayoutWithActionBar:
+            title: "Images"
+            ImagesExemple:
+    Screen:
+        name: "screen2"
+        Button:
+            text: "Button2"
+            on_press: app.manager.pop()
+    Screen:
+        name: "screen3"
+        Button:
+            text: "Button3"
+            on_press: app.manager.pop()
+
+
+
+
+
