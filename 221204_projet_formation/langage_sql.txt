@@ -1,0 +1,51 @@
+LANGAGE SQL
+................
+
+artiste
+- artiste_id # clef primaire de la table artiste
+- nom
+
+album
+- album_id
+- artiste_id
+- titre
+- annee_sortie
+
+CREATE TABLE artiste(
+    artiste_id INTEGER NOT NULL PRIMARY KEY,
+    nom VARCHAR
+    );
+# mettre les type en majuscule
+# préciser la primary key, ici artiste_ID
+# préciser "NOT NULL" pour renseigner qu'il faut obligatoirement préciser la données (pas possible de laisser vide)
+# les retours à la ligne rendent plus visible
+
+CREATE TABLE ALBUM(
+    album_id INTEGER NOT NULL PRIMARY KEY,
+    artiste_id INTEGER REFERENCES artiste,
+    titre VARCHAR,
+    annee_sortie INTEGER,
+    );
+# REFERENCES indique que la clef provient d'une autre table.
+
+INSERT INTO artiste (nom) VALUES ("Michael Jackson");
+# ajout d'un artiste
+# pas besoin de préciser l'artiste_id car il est automatiquement ajouté
+
+INSERT INTO album (titre, anne_sortie) VALUES ("Thriller", 1982);
+
+UPDATE album SET annee_sortie = 1982 WHERE titre = "Thriller"
+# mettre à jour la donnée "annee_sortie" à 1982 pour l'album dont le titre est "Thriller";
+
+DELETE FROM artiste WHERE nom = "Madonna"
+# supprimer "Madonna" de la table des artistes.
+
+SELECT * FROM Artiste
+#récupérer toutes les données de la table avec "*" > l'étoile signifie l'ensemble des données
+
+SELECT nom FROM Artiste
+#Récupérer une partie des données en nommant le champ
+
+
+
+
