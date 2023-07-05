@@ -1,14 +1,14 @@
 import os
 import time
 import random
-
+#
 # fonction de nettoyage d'écran
 def clear_screen():
     if(os.name == 'posix'):
         os.system('clear')
     else:
         os.system('cls')
-
+#
 # collection des niveaux de difficultés
 """
 NIVEAU_DIFFICULTE = (
